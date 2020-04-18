@@ -9,6 +9,7 @@
   align-items: center;
   font-family: $font-primary;
   font-size: 16px;
+  line-height: 12px;
   color: #ffffff;
 }
 
@@ -16,15 +17,56 @@
   color: #ffffff;
 }
 
+.page-nav__region {
+  padding-left: 41px;
+}
+
+.page-nav__phone {
+  position: relative;
+  padding-left: 56px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: -3px;
+    left: 37px;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+  }
+}
+
 .page-nav__list {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left: 34px;
   list-style: none;
+}
+
+.page-nav__item {
+  padding-right: 36px;
+
+  &--link {
+    &:hover {
+      border-bottom: 2px solid rgb(254, 128, 87);
+    }
+  }
 }
 
 .page-nav__button {
   font-family: $font-secondary;
   font-size: 12px;
+  padding: 10px 35px;
   color: #ffffff;
+  border: 2px solid rgb(254, 128, 87);
+  border-radius: 4px;
+}
+
+.page-nav__acces {
+
+  &--entrance {
+    padding-left: 25px;
+  }
 }
