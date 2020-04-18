@@ -50,7 +50,7 @@
 
   &--link {
     &:hover {
-      border-bottom: 2px solid rgb(254, 128, 87);
+      border-bottom: 2px solid #fe8057;
     }
   }
 }
@@ -60,8 +60,12 @@
   font-size: 12px;
   padding: 10px 35px;
   color: #ffffff;
-  border: 2px solid rgb(254, 128, 87);
+  border: 2px solid #fe8057;
   border-radius: 4px;
+
+  &:hover {
+    background-color: #fe8057;
+  }
 }
 
 .page-nav__acces {
