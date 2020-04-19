@@ -7,68 +7,110 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="page-header">
-    <div class="wrapper">
-      <nav class="page-nav">
-        <div class="page-nav__wrapper">
-          <a href="#" class="page-nav__logo">
-            <img src="img/logo.png" alt="Logo" width="111" height="111">
-          </a>
-          <div class="page-nav__region">
-              Москва
+  <div class="page-wrapper">
+    <header class="page-header">
+      <div class="wrapper">
+        <nav class="page-nav">
+          <div class="page-nav__wrapper">
+            <a href="#" class="page-nav__logo">
+              <img src="img/logo.png" alt="Logo" width="111" height="111">
+            </a>
+            <div class="page-nav__region">
+                Москва
+            </div>
+            <div class="page-nav__phone">
+              <a href="tel:+7 800-562-3452">+7 800-562-3452</a>
+            </div>
+            <ul class="page-nav__list">
+              <li class="page-nav__item">
+                <a href="#" class="page-nav__item--link">
+                  О проекте
+                </a>
+              </li>
+              <li class="page-nav__item">
+                <a href="#" class="page-nav__item--link">
+                  Онлайн-курсы
+                </a>
+              </li>
+              <li class="page-nav__item">
+                <a href="#" class="page-nav__item--link">
+                  Статьи
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="page-nav__phone">
-            <a href="tel:+7 800-562-3452">+7 800-562-3452</a>
+          <button class="page-nav__button button">Преподавателям</button>
+          <div class="page-nav__acces">
+            <a href="#" class="page-nav__acces--registration">
+              Регистрация
+            </a>
+            <a href="#" class="page-nav__acces--entrance">
+              Вход
+            </a>
           </div>
-          <ul class="page-nav__list">
-            <li class="page-nav__item">
-              <a href="#" class="page-nav__item--link">
-                О проекте
-              </a>
-            </li>
-            <li class="page-nav__item">
-              <a href="#" class="page-nav__item--link">
-                Онлайн-курсы
-              </a>
-            </li>
-            <li class="page-nav__item">
-              <a href="#" class="page-nav__item--link">
-                Статьи
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button class="page-nav__button button">Преподавателям</button>
-        <div class="page-nav__acces">
-          <a href="#" class="page-nav__acces--registration">
-            Регистрация
-          </a>
-          <a href="#" class="page-nav__acces--entrance">
-            Вход
-          </a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <section class="intro">
-    <div class="intro__overlay"></div>
-    <div class="intro__text">
-      <h1 class="intro__text--title">
-        <span>Первая</span> образовательная онлайн-платформа, созданная преподами!
-      </h1>
-      <div class="intro__text--description">
-        Описание уникального торгового предложения или же описание названия того или иного продукта, который на первом экране
+        </nav>
       </div>
-      <button class="intro__text--button button">
-        Зарегистрироваться
-      </button>
-    </div>
-    <div class="intro__footer">
-      <div class="intro__footer--image"></div>
-      <div class="intro__footer--decsription">
-        Подробнее ниже
+    </header>
+    <section class="intro">
+      <div class="intro__overlay"></div>
+      <div class="intro__text">
+        <h1 class="intro__text--title">
+          <span>Первая</span> образовательная онлайн-платформа, созданная преподами!
+        </h1>
+        <div class="intro__text--description">
+          Описание уникального торгового предложения или же описание названия того или иного продукта, который на первом экране
+        </div>
+        <button class="intro__text--button button">
+          Зарегистрироваться
+        </button>
       </div>
-    </div>
-  </section>
+      <div class="intro__footer">
+        <div class="intro__footer--image"></div>
+        <div class="intro__footer--decsription">
+          Подробнее ниже
+        </div>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="wrapper">
+        <h2 class="programs__title">
+          199 преподавателей уже работает на сайте
+        </h2>
+        <div class="programs__choise">
+          Выберите свою программу
+        </div>
+        <div class="programs__cards">
+          <div class="programs__cards--item">
+            <img class="programs__cards--image" src="img/school.jpg" alt="Школьная программа">
+            <div class="programs__cards--item-footer">
+              <a href="#">
+                <span class="description">Школьная программа</span>
+                <span class="more">Подробнее о программе</span>
+              </a>
+            </div>
+          </div>
+          <div class="programs__cards--item">
+            <img class="programs__cards--image" src="img/student.jpg" alt="Студенческая программа">
+            <div class="programs__cards--item-footer">
+              <a href="#">
+                <span class="description">Студенческая программа</span>
+                <span class="more">Подробнее о программе</span>
+              </a>
+            </div>
+            <div class="programs__cards--item-overlay"></div>
+          </div>
+          <div class="programs__cards--item">
+            <img class="programs__cards--image" src="img/optionally.jpg" alt="Дополнительное образование">
+            <div class="programs__cards--item-footer">
+              <a href="#">
+                <span class="description">Дополнительное образование</span>
+                <span class="more">Подробнее о программе</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
