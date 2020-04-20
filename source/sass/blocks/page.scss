@@ -1,6 +1,25 @@
-.page-wrapper {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1440px;
-  box-shadow: 0px 3px 10px 0px rgba(2, 2, 2, 0.2);
+@media (min-width: $tablet-width) {
+
+  .page-wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1024px;
+    box-shadow: 0px 3px 10px 0px rgba(2, 2, 2, 0.2);
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 952px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-wrapper {
+    max-width: 1440px;
+  }
+
+  .wrapper {
+    max-width: 1280px;
+  }
 }

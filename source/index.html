@@ -13,7 +13,7 @@
         <nav class="page-nav">
           <div class="page-nav__wrapper">
             <a href="#" class="page-nav__logo">
-              <img src="img/logo.png" alt="Logo" width="111" height="111">
+              <img src="img/logo.png" alt="Logo">
             </a>
             <div class="page-nav__region">
                 Москва
@@ -40,7 +40,7 @@
             </ul>
           </div>
           <button class="page-nav__button button">Преподавателям</button>
-          <div class="page-nav__acces">
+          <div class="page-nav__acces page-nav__acces--closed">
             <a href="#" class="page-nav__acces--registration">
               Регистрация
             </a>
@@ -48,6 +48,14 @@
               Вход
             </a>
           </div>
+          <div class="page-nav__burger">
+            <button class="page-nav__burger-button button" type="button">
+              <img src="img/burger-menu.png" width="39" height="26" alt="Кнопка меню">
+            </button>
+          </div>
+          <button class="page-nav__togle-button button" type="button">
+            <img src="img/burger-menu-close.png" width="30" height="30" alt="Закрыть меню">
+          </button>
         </nav>
       </div>
     </header>
@@ -81,7 +89,11 @@
         </div>
         <div class="programs__cards">
           <div class="programs__cards--item">
-            <img class="programs__cards--image" src="img/school.jpg" alt="Школьная программа">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/school.jpg">
+              <source media="(min-width: 1024px)" srcset="img/school-tablet.jpg">
+              <img class="programs__cards--image" src="img/school.jpg" alt="Школьная программа">
+            </picture>
             <div class="programs__cards--item-footer">
               <a href="#">
                 <span class="description">Школьная программа</span>
@@ -90,7 +102,11 @@
             </div>
           </div>
           <div class="programs__cards--item">
-            <img class="programs__cards--image" src="img/student.jpg" alt="Студенческая программа">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/student.jpg">
+              <source media="(min-width: 1024px)" srcset="img/student-tablet.jpg">
+              <img class="programs__cards--image" src="img/student.jpg" alt="Студенческая программа">
+            </picture>
             <div class="programs__cards--item-footer">
               <a href="#">
                 <span class="description">Студенческая программа</span>
@@ -100,7 +116,11 @@
             <div class="programs__cards--item-overlay"></div>
           </div>
           <div class="programs__cards--item">
-            <img class="programs__cards--image" src="img/optionally.jpg" alt="Дополнительное образование">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/optionally.jpg">
+              <source media="(min-width: 1024px)" srcset="img/optionally-tablet.jpg">
+              <img class="programs__cards--image" src="img/optionally.jpg" alt="Дополнительное образование">
+            </picture>
             <div class="programs__cards--item-footer">
               <a href="#">
                 <span class="description">Дополнительное образование</span>
@@ -112,5 +132,6 @@
       </div>
     </section>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
