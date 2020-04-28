@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АмПре</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -87,51 +89,130 @@
         <div class="programs__choise">
           Выберите свою программу
         </div>
-        <div class="programs__cards">
+        <div class="programs__cards cards-no-slider">
           <div class="programs__cards--item">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/school.jpg">
-              <source media="(min-width: 1024px)" srcset="img/school-tablet.jpg">
-              <img class="programs__cards--image" src="img/school.jpg" alt="Школьная программа">
-            </picture>
-            <div class="programs__cards--item-footer">
-              <a href="#">
-                <span class="description">Школьная программа</span>
-                <span class="more">Подробнее о программе</span>
-              </a>
+            <div class="programs__cards--item-school">
+              <div class="programs__cards--item-footer">
+                <a href="#">
+                  <span class="description">Школьная программа</span>
+                  <span class="more">Подробнее о программе</span>
+                </a>
+              </div>
             </div>
           </div>
           <div class="programs__cards--item">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/student.jpg">
-              <source media="(min-width: 1024px)" srcset="img/student-tablet.jpg">
-              <img class="programs__cards--image" src="img/student.jpg" alt="Студенческая программа">
-            </picture>
-            <div class="programs__cards--item-footer">
-              <a href="#">
-                <span class="description">Студенческая программа</span>
-                <span class="more">Подробнее о программе</span>
-              </a>
+            <div class="programs__cards--item-student">
+              <div class="programs__cards--item-footer">
+                <a href="#">
+                  <span class="description">Студенческая программа</span>
+                  <span class="more">Подробнее о программе</span>
+                </a>
+              </div>
             </div>
             <div class="programs__cards--item-overlay"></div>
           </div>
           <div class="programs__cards--item">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="img/optionally.jpg">
-              <source media="(min-width: 1024px)" srcset="img/optionally-tablet.jpg">
-              <img class="programs__cards--image" src="img/optionally.jpg" alt="Дополнительное образование">
-            </picture>
-            <div class="programs__cards--item-footer">
-              <a href="#">
-                <span class="description">Дополнительное образование</span>
-                <span class="more">Подробнее о программе</span>
-              </a>
+            <div class="programs__cards--item-optionally">
+              <div class="programs__cards--item-footer">
+                <a href="#">
+                  <span class="description">Дополнительное образование</span>
+                  <span class="more">Подробнее о программе</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!---Markup of the slider for mobile version-->
+      <div class="container">
+        <div class="programs__wrap">
+          <div class="programs__cards cards-slider">
+            <div class="programs__cards--item">
+              <div class="">
+                <div class="programs__cards--image">
+                  <img src="img/school-mobile.jpg" alt="Школьная программа">
+                  <div class="programs__cards--image-footer">
+                    <a href="#">
+                      <span class="description">Школьная программа</span>
+                      <span class="more">Подробнее о программе</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="programs__cards--item">
+              <div class="programs__cards--image">
+                <img src="img/student-mobile.jpg" alt="Студенческая программа">
+                <div class="programs__cards--image-footer">
+                  <a href="#">
+                    <span class="description">Студенческая программа</span>
+                    <span class="more">Подробнее о программе</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="programs__cards--item">
+              <div class="programs__cards--image">
+                <img src="img/optionally-mobile.jpg" alt="Дополнительное образование">
+                <div class="programs__cards--image-footer">
+                  <a href="#">
+                    <span class="description">Дополнительное образование</span>
+                    <span class="more">Подробнее о программе</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End markup-->
+      <div class="offers__slider">
+        <a href="#" class="offers__slider-item">
+            <div class="offers__slider-item-wrap">
+                <div class="offers__slider-item-img">
+                    <img src="img/school-mobile.jpg" alt="Школьная программа">
+                </div>
+                <div class="offers__slider-item-text">
+                    Школьная программа
+                </div>
+                <div class="offers__slider-item-hover">
+                    Подробнее<br>о программе
+                </div>
+            </div>
+        </a>
+        <a href="#" class="offers__slider-item">
+            <div class="offers__slider-item-wrap">
+                <div class="offers__slider-item-img">
+                    <img src="img/student-mobile.jpg" alt="Студенческая программа">
+                </div>
+                <div class="offers__slider-item-text">
+                    Студенческая программа
+                </div>
+                <div class="offers__slider-item-hover">
+                    Подробнее<br>о программе
+                </div>
+            </div>
+        </a>
+        <a href="#" class="offers__slider-item">
+            <div class="offers__slider-item-wrap">
+                <div class="offers__slider-item-img">
+                    <img src="img/optionally-mobile.jpg" alt="Дополнительное образование">
+                </div>
+                <div class="offers__slider-item-text">
+                    Дополнительное образование
+                </div>
+                <div class="offers__slider-item-hover">
+                    Подробнее<br>о программе
+                </div>
+            </div>
+        </a>
+    </div>
     </section>
   </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>

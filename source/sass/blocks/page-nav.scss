@@ -1,22 +1,85 @@
-@media (min-width: $tablet-width) {
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 18px;
+  font-family: $font-primary;
+  font-size: 14px;
+  color: #ffffff;
 
-  .page-nav__wrapper {
-    display: flex;
-    align-items: center;
+}
+
+.page-nav__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav__logo {
+  order: 1;
+  padding-left: 31px;
+}
+
+.page-nav__logo img {
+  width: 88px;
+}
+
+.page-nav__phone {
+  display: none;
+}
+
+.page-nav__list {
+  display: none;
+}
+
+.page-nav__button {
+  display: none;
+}
+
+.page-nav__acces {
+
+  &--closed {
+    display: none;
   }
+}
+
+.page-nav__burger {
+  display: block;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.page-nav__burger-button {
+  padding: 0;
+}
+
+.page-nav__togle-button {
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
 
   .page-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: $font-primary;
-    font-size: 14px;
+    padding: 0;
     line-height: 12px;
-    color: #ffffff;
   }
 
   .page-nav a {
     color: #ffffff;
+  }
+
+  .page-nav__logo {
+    order: unset;
+    padding: 0;
   }
 
   .page-nav__logo img {
@@ -29,6 +92,7 @@
 
   .page-nav__phone {
     position: relative;
+    display: block;
     padding-left: 45px;
 
     &::before {
@@ -62,6 +126,7 @@
   }
 
   .page-nav__button {
+    display: block;
     font-family: $font-secondary;
     font-size: 10px;
     padding: 11px 21px;
@@ -104,33 +169,15 @@
       background-color: #ffffff;
       border-radius: 10px 0 10px 10px;
     }
-
-    &--closed {
-      display: none;
-    }
-  }
-
-  .page-nav__burger {
-    display: block;
-
-    &--hidden {
-      display: none;
-    }
   }
 
   .page-nav__burger-button {
-    padding: 0;
     padding-left: 34px;
   }
 
   .page-nav__togle-button {
-    display: none;
     padding: 0;
     padding-left: 43px;
-
-    &--opened {
-      display: block;
-    }
   }
 }
 
@@ -139,6 +186,7 @@
   .page-nav__wrapper {
     display: flex;
     align-items: center;
+    padding-right: 15px;
   }
 
   .page-nav {
@@ -158,6 +206,7 @@
   }
 
   .page-nav__phone {
+    display: block;
     padding-left: 56px;
 
     &::before {
@@ -183,6 +232,10 @@
 
   .page-nav__acces {
     display: block;
+
+    &--registration {
+      padding: 0;
+    }
 
     &--entrance {
       padding-left: 25px;

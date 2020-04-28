@@ -1,11 +1,175 @@
+.programs {
+  background-color: #ffffff;
+  //* padding: 30px;
+}
+
+.programs__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.programs__wrap {
+  margin: 0 auto;
+}
+
+.programs__title {
+  display: none;
+}
+
+.programs__choise {
+  margin: 0 auto;
+  padding-top: 57px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #4e93e1;
+}
+
+.programs__cards {
+
+  &--item {
+    position: relative;
+    width: 261px;
+    box-shadow: 0px 3px 10px 0px rgba(2, 2, 2, 0.2);
+  }
+
+  &--image {
+    width: 100%;
+  }
+
+  &--image-footer {
+    position: absolute;
+    width: 238px;
+    bottom: 0;
+    font-family: $font-secondary;
+    font-size: 18px;
+    text-align: center;
+
+
+    a {
+      padding: 28px 38px;
+      display: inline-block;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      &:hover .description {
+        display: none;
+      }
+
+      &:hover .more {
+        display: inline;
+      }
+
+      &:hover {
+        padding-top: 380px;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .more {
+      display: none;
+      padding-top: 370px;
+    }
+  }
+
+  &--image {
+    display: block;
+  }
+
+  &--item-overlay {
+    display: none;
+  }
+}
+
+.cards-no-slider {
+  display: none;
+}
+
+.cards-slider {
+  margin: 0 -30px 0;
+  padding-top: 46px;
+
+  .slick-center {
+    width: 260px;
+  }
+}
+
+.offers {
+
+  &__slider {
+      margin: 50px -10px 0;
+
+      .slick-list {
+          padding-top: 19px!important;
+          padding-bottom: 19px!important;
+      }
+  }
+
+  &__slider-item {
+      padding: 0 14px;
+
+      img {
+          display: block;
+          width: 100%;
+      }
+      &.slick-center {
+          transform: scale(1.14);
+
+      }
+  }
+
+  &__slider-item-wrap {
+      position: relative;
+  }
+
+  &__slider-item-text {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      height: 95px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  &__slider-item-hover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: #ffffff;
+      opacity: 0;
+      text-align: center;
+      padding-bottom: 24px;
+  }
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 @media (min-width: $tablet-width) {
   .programs {
     padding-top: 110px;
     padding-bottom: 130px;
-    background-color: #ffffff;
   }
 
   .programs__title {
+    display: block;
     margin: 0 auto;
     padding: 13px 70px;
     width: 561px;
@@ -17,24 +181,45 @@
   }
 
   .programs__choise {
-    margin: 0 auto;
     padding-top: 104px;
     width: 420px;
-    font-family: $font-secondary;
     font-size: 24px;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #4e93e1;
   }
 
-  .programs__cards {
+  .cards-slider {
+    display: none;
+  }
+
+  .slick-slider {
+    display: none !important;
+  }
+
+  .cards-no-slider {
     display: flex;
     justify-content: space-between;
     padding-top: 76px;
+  }
+
+  .programs__cards {
 
     &--item {
-      position: relative;
-      box-shadow: 0px 3px 10px 0px rgba(2, 2, 2, 0.2);
+      padding: 0;
+      width: 304px;
+    }
+
+    &--item-school {
+      height: 450px;
+      background-image: url("../img/school-tablet.jpg");
+    }
+
+    &--item-student {
+      height: 450px;
+      background-image: url("../img/student-tablet.jpg");
+    }
+
+    &--item-optionally {
+      height: 450px;
+      background-image: url("../img/optionally-tablet.jpg");
     }
 
     &--item-footer {
@@ -105,6 +290,22 @@
   .programs__cards {
     padding-top: 90px;
 
+    &--item {
+      width: 413px;
+    }
+
+    &--item-school {
+      background-image: url("../img/school.jpg");
+    }
+
+    &--item-student {
+      background-image: url("../img/student.jpg");
+    }
+
+    &--item-optionally {
+      background-image: url("../img/optionally.jpg");
+    }
+
     &--item-footer {
       font-size: 24px;
 
@@ -112,7 +313,7 @@
         padding: 21px 67px;
 
         &:hover {
-          padding-top: 375px;
+          padding-top: 372px;
         }
       }
     }
